@@ -1,0 +1,326 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body {
+    background-image: url(assets/bg-main-mobile.png);
+    height: 100vh;
+    width: 100%;
+    background-position: top;
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+
+/* Typography */
+h2{
+    font-size: 40px;
+    letter-spacing: -0.45px;
+}
+
+h3{
+    font-size: 32px;
+}
+
+.intro p{
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.info{
+    color: white;
+    
+}
+
+.info p{
+    line-height: 28px;
+}
+
+.cost{
+    font-size: 65px;
+}
+
+.time{
+    font-size: 20px;
+}
+
+button{
+    font-size: 18px;
+    color: white;
+}
+.andriod{
+    color: black;
+}
+
+
+
+/* General */
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.logo {
+    width: 146px;
+}
+
+
+/* Introduction */
+.intro {
+    width: 90%;
+    margin-bottom: 200px;
+    position: relative;
+}
+
+.intro .intro-img{
+    display: none;
+}
+
+.intro .logo{
+    margin-top: 37px;
+    margin-bottom: 50px;
+}
+
+.intro h2{
+    min-width: 327px;
+    margin-bottom: 20px;
+}
+.intro p{
+    max-width: 332px;
+}
+
+
+
+
+
+
+/* info */
+
+.info{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #191826;
+    border-radius: 10px;
+    height: 600px;
+    width: 100%;
+    max-width: 696px;
+}
+
+.mobile{
+    width: 209px;
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.premium {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 375px;
+    height: 546px;
+    background-color: #fa7453;
+    border-radius: 10px;
+    position: absolute;
+    top: 440px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.premium-text{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 100%;
+    padding: 50px 0;
+}
+
+.premium-text p {
+    margin: 10px 0 20px 0;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.cost{
+    margin-right: 10px;
+}
+
+.buttons-wrapper{
+    display: flex;
+    flex-direction: column
+}
+
+button{
+    width: 296px;
+    height: 61px;
+    border-radius: 15px;
+    background-color:#191826;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.andriod{
+    background-color: #FCFAF9;
+}
+
+.button span{
+    margin-left: 10px;
+}
+
+
+/* Footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 450px;
+    margin-bottom: 40px;
+}
+
+.footer .logo{
+    margin-bottom: 40px;
+}
+
+.rights{
+    display: flex;
+    flex-direction: column;
+    width: 327px;
+    margin-bottom: 40px;
+}
+
+.socials{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+/* Table Media Query */
+@media(min-width:768px){
+    /* typography */
+    .intro h2{
+        font-size: 62px;
+    }
+
+    .intro p{
+        font-size: 18px;
+    }
+
+
+    /* General */
+    .container{
+        max-width: 696px;
+    }
+
+
+
+    /* Intro */
+    .intro .intro-img{
+        display: block;
+        width: 233px;
+        position: absolute;
+        top: 0%;
+        right: -16%;
+        z-index: 999;
+    }
+
+    .intro h2{
+        max-width: 520px;
+    }
+
+    .intro p{
+        max-width: 514px;
+    }
+
+    /* Info */
+
+    .info{
+        max-width: 100%;
+    }
+
+    .info-bg_img{
+        position: absolute;
+        top: -50px;
+        left: 33%
+    }
+
+    .mobile{
+        width: 270px;
+        left: 30%;
+    }
+
+    .premium{
+        top: 35%;
+        left: 64%;
+    }
+
+    /* Footer */
+    .footer{
+        width: 90%;
+        margin-top: 250px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .rights{
+        margin: 0;   
+    }
+
+    .socials img{
+        width: 20px;
+        height: 20px;
+        align-self: flex-end;
+        
+    }
+}
+
+@media(min-width: 1000px){
+    /* Tyography */
+    .intro h2 {
+        font-size: 88px;
+    }
+
+    .intro p{
+        font-size: 20px;
+    }
+
+    /* General */
+    .container{
+        max-width: 1100px;
+    }
+
+    .intro h2{
+        max-width: 900px;
+    }
+
+    .intro p{
+        min-width: 825px;
+    }
+
+    .intro-img{
+        position: absolute;
+        top: -15%;
+    }
+
+    .premium{
+        right: 50px;
+    }
+}
